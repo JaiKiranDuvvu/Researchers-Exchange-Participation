@@ -1,3 +1,5 @@
-# Course-Management-System
+# Researchers-Exchange-Participation
 
-A simple java based Query Tool for Course Management System
+Online System where researchers exchange Participants and Views
+
+http://rep-jaikiranuncc.rhcloud.com/JaiKiran_Assignment4/
