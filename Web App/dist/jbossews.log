@@ -1,0 +1,2090 @@
+Feb 06, 2016 9:32:43 PM org.apache.catalina.startup.Catalina addClusterRuleSet
+INFO: Cluster RuleSet not found due to [java.lang.ClassNotFoundException: org.apache.catalina.ha.ClusterRuleSet]. Cluster configuration disabled.
+Feb 06, 2016 9:32:43 PM org.apache.catalina.startup.Catalina addClusterRuleSet
+INFO: Cluster RuleSet not found due to [java.lang.ClassNotFoundException: org.apache.catalina.ha.ClusterRuleSet]. Cluster configuration disabled.
+Feb 06, 2016 9:32:44 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: :/usr/java/packages/lib/i386:/lib:/usr/lib
+Feb 06, 2016 9:32:44 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-127.8.191.129-8080"]
+Feb 06, 2016 9:32:44 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 1188 ms
+Feb 06, 2016 9:32:44 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Feb 06, 2016 9:32:44 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.54
+Feb 06, 2016 9:32:44 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/ROOT.war
+Feb 06, 2016 9:32:47 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/ROOT.war has finished in 2,772 ms
+Feb 06, 2016 9:32:47 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-127.8.191.129-8080"]
+Feb 06, 2016 9:32:47 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 2932 ms
+Feb 06, 2016 9:38:17 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment1.war
+Feb 06, 2016 9:38:17 PM org.apache.catalina.startup.ContextConfig beforeStart
+SEVERE: Exception fixing docBase for context [/JaiKiran_Assignment1]
+java.util.zip.ZipException: error in opening zip file
+	at java.util.zip.ZipFile.open(Native Method)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:215)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:145)
+	at java.util.jar.JarFile.<init>(JarFile.java:154)
+	at java.util.jar.JarFile.<init>(JarFile.java:91)
+	at sun.net.www.protocol.jar.URLJarFile.<init>(URLJarFile.java:93)
+	at sun.net.www.protocol.jar.URLJarFile.getJarFile(URLJarFile.java:69)
+	at sun.net.www.protocol.jar.JarFileFactory.get(JarFileFactory.java:99)
+	at sun.net.www.protocol.jar.JarURLConnection.connect(JarURLConnection.java:122)
+	at sun.net.www.protocol.jar.JarURLConnection.getJarFile(JarURLConnection.java:89)
+	at org.apache.catalina.startup.ExpandWar.validate(ExpandWar.java:220)
+	at org.apache.catalina.startup.ContextConfig.fixDocBase(ContextConfig.java:732)
+	at org.apache.catalina.startup.ContextConfig.beforeStart(ContextConfig.java:850)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:376)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:117)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:402)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:147)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:901)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:877)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:632)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:1083)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1880)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Feb 06, 2016 9:38:17 PM org.apache.catalina.core.StandardContext resourcesStart
+SEVERE: Error starting static Resources
+java.lang.IllegalArgumentException: Invalid or unreadable WAR file : error in opening zip file
+	at org.apache.naming.resources.WARDirContext.setDocBase(WARDirContext.java:136)
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:5089)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5269)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:901)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:877)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:632)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:1083)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1880)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Feb 06, 2016 9:38:17 PM org.apache.catalina.core.ContainerBase addChildInternal
+SEVERE: ContainerBase.addChild: start: 
+org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/JaiKiran_Assignment1]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:154)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:901)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:877)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:632)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:1083)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1880)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.catalina.LifecycleException: Error in resourceStart()
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5270)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 10 more
+Feb 06, 2016 9:38:17 PM org.apache.catalina.startup.HostConfig deployWAR
+SEVERE: Error deploying web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment1.war
+java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/JaiKiran_Assignment1]]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:904)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:877)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:632)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:1083)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1880)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Feb 06, 2016 9:38:17 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment1.war has finished in 24 ms
+Feb 06, 2016 9:38:27 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/JaiKiran_Assignment1]
+Feb 06, 2016 9:38:27 PM org.apache.catalina.deploy.NamingResources cleanUp
+WARNING: Failed to retrieve JNDI naming context for container [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/JaiKiran_Assignment1]] so no cleanup was performed for that container
+javax.naming.NameNotFoundException: Name [comp/env] is not bound in this Context. Unable to find [comp].
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:819)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:167)
+	at org.apache.catalina.deploy.NamingResources.cleanUp(NamingResources.java:986)
+	at org.apache.catalina.deploy.NamingResources.stopInternal(NamingResources.java:968)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:232)
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5676)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:232)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:272)
+	at org.apache.catalina.core.ContainerBase.removeChild(ContainerBase.java:1041)
+	at org.apache.catalina.startup.HostConfig.undeploy(HostConfig.java:1501)
+	at org.apache.catalina.startup.HostConfig.checkResources(HostConfig.java:1428)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1649)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:328)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:117)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1374)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1530)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1540)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1519)
+	at java.lang.Thread.run(Thread.java:745)
+Feb 06, 2016 9:38:27 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment1.war
+Feb 06, 2016 9:38:27 PM org.apache.catalina.deploy.WebXml setVersion
+WARNING: Unknown version string [3.1]. Default version will be used.
+Feb 06, 2016 9:38:28 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment1.war has finished in 1,367 ms
+Feb 06, 2016 9:39:17 PM org.apache.jasper.compiler.TldLocationsCache tldScanJar
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Feb 06, 2016 9:44:09 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/JaiKiran_Assignment1]
+Feb 06, 2016 9:44:19 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment1.war
+Feb 06, 2016 9:44:19 PM org.apache.catalina.deploy.WebXml setVersion
+WARNING: Unknown version string [3.1]. Default version will be used.
+Feb 06, 2016 9:44:20 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment1.war has finished in 768 ms
+Feb 12, 2016 12:04:38 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-127.8.191.129-8080"]
+Feb 12, 2016 12:04:38 AM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Feb 12, 2016 12:04:39 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-127.8.191.129-8080"]
+Feb 12, 2016 12:04:39 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-127.8.191.129-8080"]
+Feb 12, 2016 8:42:54 PM org.apache.catalina.startup.Catalina addClusterRuleSet
+INFO: Cluster RuleSet not found due to [java.lang.ClassNotFoundException: org.apache.catalina.ha.ClusterRuleSet]. Cluster configuration disabled.
+Feb 12, 2016 8:42:54 PM org.apache.catalina.startup.Catalina addClusterRuleSet
+INFO: Cluster RuleSet not found due to [java.lang.ClassNotFoundException: org.apache.catalina.ha.ClusterRuleSet]. Cluster configuration disabled.
+Feb 12, 2016 8:42:55 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: :/usr/java/packages/lib/i386:/lib:/usr/lib
+Feb 12, 2016 8:42:55 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-127.8.191.129-8080"]
+Feb 12, 2016 8:42:55 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 1655 ms
+Feb 12, 2016 8:42:55 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Feb 12, 2016 8:42:55 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.54
+Feb 12, 2016 8:42:55 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/ROOT.war
+Feb 12, 2016 8:42:58 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/ROOT.war has finished in 2,377 ms
+Feb 12, 2016 8:42:58 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment1.war
+Feb 12, 2016 8:42:58 PM org.apache.catalina.deploy.WebXml setVersion
+WARNING: Unknown version string [3.1]. Default version will be used.
+Feb 12, 2016 8:42:59 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment1.war has finished in 1,296 ms
+Feb 12, 2016 8:42:59 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-127.8.191.129-8080"]
+Feb 12, 2016 8:42:59 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 3953 ms
+Feb 14, 2016 12:07:52 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-127.8.191.129-8080"]
+Feb 14, 2016 12:07:52 AM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Feb 14, 2016 12:07:52 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-127.8.191.129-8080"]
+Feb 14, 2016 12:07:52 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-127.8.191.129-8080"]
+Feb 17, 2016 11:18:56 AM org.apache.catalina.startup.Catalina addClusterRuleSet
+INFO: Cluster RuleSet not found due to [java.lang.ClassNotFoundException: org.apache.catalina.ha.ClusterRuleSet]. Cluster configuration disabled.
+Feb 17, 2016 11:18:56 AM org.apache.catalina.startup.Catalina addClusterRuleSet
+INFO: Cluster RuleSet not found due to [java.lang.ClassNotFoundException: org.apache.catalina.ha.ClusterRuleSet]. Cluster configuration disabled.
+Feb 17, 2016 11:18:57 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: :/usr/java/packages/lib/i386:/lib:/usr/lib
+Feb 17, 2016 11:18:57 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-127.8.191.129-8080"]
+Feb 17, 2016 11:18:57 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 2071 ms
+Feb 17, 2016 11:18:58 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Feb 17, 2016 11:18:58 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.54
+Feb 17, 2016 11:18:58 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/ROOT.war
+Feb 17, 2016 11:19:00 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/ROOT.war has finished in 2,497 ms
+Feb 17, 2016 11:19:00 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment1.war
+Feb 17, 2016 11:19:00 AM org.apache.catalina.deploy.WebXml setVersion
+WARNING: Unknown version string [3.1]. Default version will be used.
+Feb 17, 2016 11:19:01 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment1.war has finished in 1,296 ms
+Feb 17, 2016 11:19:01 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-127.8.191.129-8080"]
+Feb 17, 2016 11:19:02 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 4076 ms
+Feb 18, 2016 2:51:52 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-127.8.191.129-8080"]
+Feb 18, 2016 2:51:53 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Feb 18, 2016 2:51:53 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-127.8.191.129-8080"]
+Feb 18, 2016 2:51:53 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-127.8.191.129-8080"]
+Feb 19, 2016 7:15:27 PM org.apache.catalina.startup.Catalina addClusterRuleSet
+INFO: Cluster RuleSet not found due to [java.lang.ClassNotFoundException: org.apache.catalina.ha.ClusterRuleSet]. Cluster configuration disabled.
+Feb 19, 2016 7:15:27 PM org.apache.catalina.startup.Catalina addClusterRuleSet
+INFO: Cluster RuleSet not found due to [java.lang.ClassNotFoundException: org.apache.catalina.ha.ClusterRuleSet]. Cluster configuration disabled.
+Feb 19, 2016 7:15:28 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: :/usr/java/packages/lib/i386:/lib:/usr/lib
+Feb 19, 2016 7:15:29 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-127.8.191.129-8080"]
+Feb 19, 2016 7:15:29 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 1695 ms
+Feb 19, 2016 7:15:29 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Feb 19, 2016 7:15:29 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.54
+Feb 19, 2016 7:15:29 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/ROOT.war
+Feb 19, 2016 7:15:32 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/ROOT.war has finished in 3,535 ms
+Feb 19, 2016 7:15:32 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment1.war
+Feb 19, 2016 7:15:33 PM org.apache.catalina.deploy.WebXml setVersion
+WARNING: Unknown version string [3.1]. Default version will be used.
+Feb 19, 2016 7:15:34 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment1.war has finished in 1,338 ms
+Feb 19, 2016 7:15:34 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-127.8.191.129-8080"]
+Feb 19, 2016 7:15:34 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 5103 ms
+Feb 20, 2016 8:50:50 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-127.8.191.129-8080"]
+Feb 20, 2016 8:50:50 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Feb 20, 2016 8:50:50 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-127.8.191.129-8080"]
+Feb 20, 2016 8:50:50 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-127.8.191.129-8080"]
+Feb 23, 2016 3:14:57 PM org.apache.catalina.startup.Catalina addClusterRuleSet
+INFO: Cluster RuleSet not found due to [java.lang.ClassNotFoundException: org.apache.catalina.ha.ClusterRuleSet]. Cluster configuration disabled.
+Feb 23, 2016 3:14:57 PM org.apache.catalina.startup.Catalina addClusterRuleSet
+INFO: Cluster RuleSet not found due to [java.lang.ClassNotFoundException: org.apache.catalina.ha.ClusterRuleSet]. Cluster configuration disabled.
+Feb 23, 2016 3:14:58 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: :/usr/java/packages/lib/i386:/lib:/usr/lib
+Feb 23, 2016 3:14:58 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-127.8.191.129-8080"]
+Feb 23, 2016 3:14:58 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 1668 ms
+Feb 23, 2016 3:14:58 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Feb 23, 2016 3:14:58 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.54
+Feb 23, 2016 3:14:59 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/ROOT.war
+Feb 23, 2016 3:15:02 PM org.apache.catalina.util.SessionIdGenerator createSecureRandom
+INFO: Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [142] milliseconds.
+Feb 23, 2016 3:15:02 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/ROOT.war has finished in 3,409 ms
+Feb 23, 2016 3:15:02 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment1.war
+Feb 23, 2016 3:15:02 PM org.apache.catalina.deploy.WebXml setVersion
+WARNING: Unknown version string [3.1]. Default version will be used.
+Feb 23, 2016 3:15:05 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment1.war has finished in 2,578 ms
+Feb 23, 2016 3:15:05 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-127.8.191.129-8080"]
+Feb 23, 2016 3:15:05 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 6417 ms
+Feb 24, 2016 8:51:30 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-127.8.191.129-8080"]
+Feb 24, 2016 8:51:31 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Feb 24, 2016 8:51:31 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-127.8.191.129-8080"]
+Feb 24, 2016 8:51:31 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-127.8.191.129-8080"]
+Feb 29, 2016 9:18:49 PM org.apache.catalina.startup.Catalina addClusterRuleSet
+INFO: Cluster RuleSet not found due to [java.lang.ClassNotFoundException: org.apache.catalina.ha.ClusterRuleSet]. Cluster configuration disabled.
+Feb 29, 2016 9:18:49 PM org.apache.catalina.startup.Catalina addClusterRuleSet
+INFO: Cluster RuleSet not found due to [java.lang.ClassNotFoundException: org.apache.catalina.ha.ClusterRuleSet]. Cluster configuration disabled.
+Feb 29, 2016 9:18:50 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: :/usr/java/packages/lib/i386:/lib:/usr/lib
+Feb 29, 2016 9:18:50 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-127.8.191.129-8080"]
+Feb 29, 2016 9:18:50 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 1665 ms
+Feb 29, 2016 9:18:50 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Feb 29, 2016 9:18:50 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.54
+Feb 29, 2016 9:18:51 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/ROOT.war
+Feb 29, 2016 9:18:53 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/ROOT.war has finished in 2,754 ms
+Feb 29, 2016 9:18:54 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment1.war
+Feb 29, 2016 9:18:54 PM org.apache.catalina.deploy.WebXml setVersion
+WARNING: Unknown version string [3.1]. Default version will be used.
+Feb 29, 2016 9:18:55 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment1.war has finished in 1,210 ms
+Feb 29, 2016 9:18:55 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment2.war
+Feb 29, 2016 9:18:55 PM org.apache.catalina.deploy.WebXml setVersion
+WARNING: Unknown version string [3.1]. Default version will be used.
+Feb 29, 2016 9:18:56 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment2.war has finished in 1,519 ms
+Feb 29, 2016 9:18:56 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-127.8.191.129-8080"]
+Feb 29, 2016 9:18:56 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 5898 ms
+Feb 29, 2016 10:19:37 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/JaiKiran_Assignment2]
+Feb 29, 2016 10:20:27 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment2.war
+Feb 29, 2016 10:20:28 PM org.apache.catalina.deploy.WebXml setVersion
+WARNING: Unknown version string [3.1]. Default version will be used.
+Feb 29, 2016 10:20:28 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment2.war has finished in 1,016 ms
+Feb 29, 2016 10:21:14 PM org.apache.jasper.compiler.TldLocationsCache tldScanJar
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Feb 29, 2016 10:45:29 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/JaiKiran_Assignment2]
+Feb 29, 2016 10:45:29 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment2.war
+Feb 29, 2016 10:45:29 PM org.apache.catalina.startup.ContextConfig beforeStart
+SEVERE: Exception fixing docBase for context [/JaiKiran_Assignment2]
+java.util.zip.ZipException: error in opening zip file
+	at java.util.zip.ZipFile.open(Native Method)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:215)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:145)
+	at java.util.jar.JarFile.<init>(JarFile.java:154)
+	at java.util.jar.JarFile.<init>(JarFile.java:91)
+	at sun.net.www.protocol.jar.URLJarFile.<init>(URLJarFile.java:93)
+	at sun.net.www.protocol.jar.URLJarFile.getJarFile(URLJarFile.java:69)
+	at sun.net.www.protocol.jar.JarFileFactory.get(JarFileFactory.java:99)
+	at sun.net.www.protocol.jar.JarURLConnection.connect(JarURLConnection.java:122)
+	at sun.net.www.protocol.jar.JarURLConnection.getJarFile(JarURLConnection.java:89)
+	at org.apache.catalina.startup.ExpandWar.validate(ExpandWar.java:220)
+	at org.apache.catalina.startup.ContextConfig.fixDocBase(ContextConfig.java:732)
+	at org.apache.catalina.startup.ContextConfig.beforeStart(ContextConfig.java:850)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:376)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:117)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:402)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:147)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:901)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:877)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:632)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:1083)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1880)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Feb 29, 2016 10:45:29 PM org.apache.catalina.core.StandardContext resourcesStart
+SEVERE: Error starting static Resources
+java.lang.IllegalArgumentException: Invalid or unreadable WAR file : error in opening zip file
+	at org.apache.naming.resources.WARDirContext.setDocBase(WARDirContext.java:136)
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:5089)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5269)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:901)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:877)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:632)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:1083)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1880)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Feb 29, 2016 10:45:29 PM org.apache.catalina.core.ContainerBase addChildInternal
+SEVERE: ContainerBase.addChild: start: 
+org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/JaiKiran_Assignment2]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:154)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:901)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:877)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:632)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:1083)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1880)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.catalina.LifecycleException: Error in resourceStart()
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5270)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 10 more
+Feb 29, 2016 10:45:29 PM org.apache.catalina.startup.HostConfig deployWAR
+SEVERE: Error deploying web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment2.war
+java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/JaiKiran_Assignment2]]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:904)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:877)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:632)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:1083)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1880)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Feb 29, 2016 10:45:29 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment2.war has finished in 16 ms
+Feb 29, 2016 10:45:39 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/JaiKiran_Assignment2]
+Feb 29, 2016 10:45:39 PM org.apache.catalina.deploy.NamingResources cleanUp
+WARNING: Failed to retrieve JNDI naming context for container [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/JaiKiran_Assignment2]] so no cleanup was performed for that container
+javax.naming.NameNotFoundException: Name [comp/env] is not bound in this Context. Unable to find [comp].
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:819)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:167)
+	at org.apache.catalina.deploy.NamingResources.cleanUp(NamingResources.java:986)
+	at org.apache.catalina.deploy.NamingResources.stopInternal(NamingResources.java:968)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:232)
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5676)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:232)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:272)
+	at org.apache.catalina.core.ContainerBase.removeChild(ContainerBase.java:1041)
+	at org.apache.catalina.startup.HostConfig.undeploy(HostConfig.java:1501)
+	at org.apache.catalina.startup.HostConfig.checkResources(HostConfig.java:1428)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1649)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:328)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:117)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1374)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1530)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1540)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1519)
+	at java.lang.Thread.run(Thread.java:745)
+Feb 29, 2016 10:45:39 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment2.war
+Feb 29, 2016 10:45:39 PM org.apache.catalina.deploy.WebXml setVersion
+WARNING: Unknown version string [3.1]. Default version will be used.
+Feb 29, 2016 10:45:39 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment2.war has finished in 582 ms
+Feb 29, 2016 10:50:30 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/JaiKiran_Assignment2]
+Feb 29, 2016 10:50:40 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment2.war
+Feb 29, 2016 10:50:40 PM org.apache.catalina.deploy.WebXml setVersion
+WARNING: Unknown version string [3.1]. Default version will be used.
+Feb 29, 2016 10:50:41 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment2.war has finished in 659 ms
+Exception in reading file ::java.io.FileNotFoundException: null/UserDB.txt (No such file or directory)
+Exception in reading file ::java.io.FileNotFoundException: null/UserDB.txt (No such file or directory)
+Exception in reading file ::java.io.FileNotFoundException: null/UserDB.txt (No such file or directory)
+Exception in reading file ::java.io.FileNotFoundException: null/UserDB.txt (No such file or directory)
+Exception in reading file ::java.io.FileNotFoundException: null/StudyDB.txt (No such file or directory)
+Exception in reading file ::java.io.FileNotFoundException: null/StudyDB.txt (No such file or directory)
+Exception in reading file ::java.io.FileNotFoundException: null/StudyDB.txt (No such file or directory)
+Exception in reading file ::java.io.FileNotFoundException: null/StudyDB.txt (No such file or directory)
+Exception in reading file ::java.io.FileNotFoundException: null/StudyDB.txt (No such file or directory)
+Exception in reading file ::java.io.FileNotFoundException: null/StudyDB.txt (No such file or directory)
+Exception in reading file ::java.io.FileNotFoundException: null/StudyDB.txt (No such file or directory)
+Exception in reading file ::java.io.FileNotFoundException: null/StudyDB.txt (No such file or directory)
+Exception in reading file ::java.io.FileNotFoundException: null/StudyDB.txt (No such file or directory)
+Exception in reading file ::java.io.FileNotFoundException: null/StudyDB.txt (No such file or directory)
+Exception in reading file ::java.io.FileNotFoundException: null/UserDB.txt (No such file or directory)
+Exception in reading file ::java.io.FileNotFoundException: null/UserDB.txt (No such file or directory)
+Exception in reading file ::java.io.FileNotFoundException: null/UserDB.txt (No such file or directory)
+Exception in reading file ::java.io.FileNotFoundException: null/UserDB.txt (No such file or directory)
+Exception in reading file ::java.io.FileNotFoundException: null/UserDB.txt (No such file or directory)
+Mar 01, 2016 9:09:12 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/JaiKiran_Assignment2]
+Mar 01, 2016 9:09:13 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment2.war
+Mar 01, 2016 9:09:13 PM org.apache.catalina.core.StandardContext startInternal
+SEVERE: Error initializing resources: The alias location '/var/lib/openshift/12592ddfd6824bd88a45a3dd111b2ced/app-root/data' does not exist
+Mar 01, 2016 9:09:13 PM org.apache.catalina.core.StandardContext startInternal
+SEVERE: Error getConfigured
+Mar 01, 2016 9:09:13 PM org.apache.catalina.core.StandardContext startInternal
+SEVERE: Context [/JaiKiran_Assignment2] startup failed due to previous errors
+Mar 01, 2016 9:09:13 PM org.apache.catalina.deploy.NamingResources cleanUp
+WARNING: Failed to retrieve JNDI naming context for container [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/JaiKiran_Assignment2]] so no cleanup was performed for that container
+javax.naming.NameNotFoundException: Name [comp/env] is not bound in this Context. Unable to find [comp].
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:819)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:167)
+	at org.apache.catalina.deploy.NamingResources.cleanUp(NamingResources.java:986)
+	at org.apache.catalina.deploy.NamingResources.stopInternal(NamingResources.java:968)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:232)
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5676)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:232)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:160)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:901)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:877)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:632)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:1083)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1880)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Mar 01, 2016 9:09:13 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment2.war has finished in 98 ms
+Mar 01, 2016 9:10:53 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/JaiKiran_Assignment2]
+Mar 01, 2016 9:11:03 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment2.war
+Mar 01, 2016 9:11:03 PM org.apache.catalina.core.StandardContext startInternal
+SEVERE: Error initializing resources: The alias location '/var/lib/openshift/12592ddfd6824bd88a45a3dd111b2ced/app-root/data' does not exist
+Mar 01, 2016 9:11:03 PM org.apache.catalina.core.StandardContext startInternal
+SEVERE: Error getConfigured
+Mar 01, 2016 9:11:03 PM org.apache.catalina.core.StandardContext startInternal
+SEVERE: Context [/JaiKiran_Assignment2] startup failed due to previous errors
+Mar 01, 2016 9:11:03 PM org.apache.catalina.deploy.NamingResources cleanUp
+WARNING: Failed to retrieve JNDI naming context for container [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/JaiKiran_Assignment2]] so no cleanup was performed for that container
+javax.naming.NameNotFoundException: Name [comp/env] is not bound in this Context. Unable to find [comp].
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:819)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:167)
+	at org.apache.catalina.deploy.NamingResources.cleanUp(NamingResources.java:986)
+	at org.apache.catalina.deploy.NamingResources.stopInternal(NamingResources.java:968)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:232)
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5676)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:232)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:160)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:901)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:877)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:632)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:1083)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1880)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Mar 01, 2016 9:11:03 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment2.war has finished in 114 ms
+Mar 01, 2016 9:16:34 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/JaiKiran_Assignment2]
+Mar 01, 2016 9:16:44 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment2.war
+Mar 01, 2016 9:16:44 PM org.apache.catalina.deploy.WebXml setVersion
+WARNING: Unknown version string [3.1]. Default version will be used.
+Mar 01, 2016 9:16:45 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment2.war has finished in 618 ms
+Exception in reading file ::java.io.FileNotFoundException: /static/UserDB.txt (No such file or directory)
+Exception in reading file ::java.io.FileNotFoundException: /static/UserDB.txt (No such file or directory)
+Exception in reading file ::java.io.FileNotFoundException: /static/UserDB.txt (No such file or directory)
+Exception in reading file ::java.io.FileNotFoundException: /static/UserDB.txt (No such file or directory)
+Exception in reading file ::java.io.FileNotFoundException: /static/StudyDB.txt (No such file or directory)
+Exception in reading file ::java.io.FileNotFoundException: /static/StudyDB.txt (No such file or directory)
+Exception in reading file ::java.io.FileNotFoundException: /static/StudyDB.txt (No such file or directory)
+Mar 01, 2016 9:41:25 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/JaiKiran_Assignment2]
+Mar 01, 2016 9:41:25 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment2.war
+Mar 01, 2016 9:41:26 PM org.apache.catalina.deploy.WebXml setVersion
+WARNING: Unknown version string [3.1]. Default version will be used.
+Mar 01, 2016 9:41:27 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment2.war has finished in 1,092 ms
+Exception in reading file ::java.io.FileNotFoundException: /JaiKiran_Assignment2/static/UserDB.txt (No such file or directory)
+Mar 01, 2016 9:51:17 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/JaiKiran_Assignment2]
+Mar 01, 2016 9:51:27 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment2.war
+Mar 01, 2016 9:51:27 PM org.apache.catalina.deploy.WebXml setVersion
+WARNING: Unknown version string [3.1]. Default version will be used.
+Mar 01, 2016 9:51:28 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment2.war has finished in 566 ms
+Exception in reading file ::java.io.FileNotFoundException: /JaiKiran_Assignment2/static/UserDB.txt (No such file or directory)
+Exception in reading file ::java.io.FileNotFoundException: /JaiKiran_Assignment2/static/UserDB.txt (No such file or directory)
+Mar 01, 2016 10:10:48 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/JaiKiran_Assignment2]
+Mar 01, 2016 10:10:48 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment2.war
+Mar 01, 2016 10:10:48 PM org.apache.catalina.startup.ContextConfig beforeStart
+SEVERE: Exception fixing docBase for context [/JaiKiran_Assignment2]
+java.util.zip.ZipException: error in opening zip file
+	at java.util.zip.ZipFile.open(Native Method)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:215)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:145)
+	at java.util.jar.JarFile.<init>(JarFile.java:154)
+	at java.util.jar.JarFile.<init>(JarFile.java:91)
+	at sun.net.www.protocol.jar.URLJarFile.<init>(URLJarFile.java:93)
+	at sun.net.www.protocol.jar.URLJarFile.getJarFile(URLJarFile.java:69)
+	at sun.net.www.protocol.jar.JarFileFactory.get(JarFileFactory.java:99)
+	at sun.net.www.protocol.jar.JarURLConnection.connect(JarURLConnection.java:122)
+	at sun.net.www.protocol.jar.JarURLConnection.getJarFile(JarURLConnection.java:89)
+	at org.apache.catalina.startup.ExpandWar.validate(ExpandWar.java:220)
+	at org.apache.catalina.startup.ContextConfig.fixDocBase(ContextConfig.java:732)
+	at org.apache.catalina.startup.ContextConfig.beforeStart(ContextConfig.java:850)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:376)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:117)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:402)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:147)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:901)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:877)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:632)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:1083)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1880)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Mar 01, 2016 10:10:48 PM org.apache.catalina.core.StandardContext resourcesStart
+SEVERE: Error starting static Resources
+java.lang.IllegalArgumentException: Invalid or unreadable WAR file : error in opening zip file
+	at org.apache.naming.resources.WARDirContext.setDocBase(WARDirContext.java:136)
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:5089)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5269)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:901)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:877)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:632)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:1083)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1880)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Mar 01, 2016 10:10:48 PM org.apache.catalina.core.ContainerBase addChildInternal
+SEVERE: ContainerBase.addChild: start: 
+org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/JaiKiran_Assignment2]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:154)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:901)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:877)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:632)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:1083)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1880)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.catalina.LifecycleException: Error in resourceStart()
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5270)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 10 more
+Mar 01, 2016 10:10:48 PM org.apache.catalina.startup.HostConfig deployWAR
+SEVERE: Error deploying web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment2.war
+java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/JaiKiran_Assignment2]]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:904)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:877)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:632)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:1083)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1880)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Mar 01, 2016 10:10:48 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment2.war has finished in 20 ms
+Mar 01, 2016 10:10:58 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/JaiKiran_Assignment2]
+Mar 01, 2016 10:10:58 PM org.apache.catalina.deploy.NamingResources cleanUp
+WARNING: Failed to retrieve JNDI naming context for container [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/JaiKiran_Assignment2]] so no cleanup was performed for that container
+javax.naming.NameNotFoundException: Name [comp/env] is not bound in this Context. Unable to find [comp].
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:819)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:167)
+	at org.apache.catalina.deploy.NamingResources.cleanUp(NamingResources.java:986)
+	at org.apache.catalina.deploy.NamingResources.stopInternal(NamingResources.java:968)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:232)
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5676)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:232)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:272)
+	at org.apache.catalina.core.ContainerBase.removeChild(ContainerBase.java:1041)
+	at org.apache.catalina.startup.HostConfig.undeploy(HostConfig.java:1501)
+	at org.apache.catalina.startup.HostConfig.checkResources(HostConfig.java:1428)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1649)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:328)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:117)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1374)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1530)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1540)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1519)
+	at java.lang.Thread.run(Thread.java:745)
+Mar 01, 2016 10:10:58 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment2.war
+Mar 01, 2016 10:10:58 PM org.apache.catalina.deploy.WebXml setVersion
+WARNING: Unknown version string [3.1]. Default version will be used.
+Mar 01, 2016 10:10:59 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment2.war has finished in 750 ms
+Path is ::rep-jaikiranuncc.rhcloud.com/JaiKiran_Assignment2/static
+Path is ::rep-jaikiranuncc.rhcloud.com/JaiKiran_Assignment2/static
+Path is ::rep-jaikiranuncc.rhcloud.com/JaiKiran_Assignment2/static
+Exception in reading file ::java.io.FileNotFoundException: rep-jaikiranuncc.rhcloud.com/JaiKiran_Assignment2/static/UserDB.txt (No such file or directory)
+Mar 01, 2016 10:40:09 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/JaiKiran_Assignment2]
+Mar 01, 2016 10:40:09 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment2.war
+Mar 01, 2016 10:40:09 PM org.apache.catalina.startup.ContextConfig beforeStart
+SEVERE: Exception fixing docBase for context [/JaiKiran_Assignment2]
+java.util.zip.ZipException: error in opening zip file
+	at java.util.zip.ZipFile.open(Native Method)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:215)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:145)
+	at java.util.jar.JarFile.<init>(JarFile.java:154)
+	at java.util.jar.JarFile.<init>(JarFile.java:91)
+	at sun.net.www.protocol.jar.URLJarFile.<init>(URLJarFile.java:93)
+	at sun.net.www.protocol.jar.URLJarFile.getJarFile(URLJarFile.java:69)
+	at sun.net.www.protocol.jar.JarFileFactory.get(JarFileFactory.java:99)
+	at sun.net.www.protocol.jar.JarURLConnection.connect(JarURLConnection.java:122)
+	at sun.net.www.protocol.jar.JarURLConnection.getJarFile(JarURLConnection.java:89)
+	at org.apache.catalina.startup.ExpandWar.validate(ExpandWar.java:220)
+	at org.apache.catalina.startup.ContextConfig.fixDocBase(ContextConfig.java:732)
+	at org.apache.catalina.startup.ContextConfig.beforeStart(ContextConfig.java:850)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:376)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:117)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:402)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:147)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:901)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:877)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:632)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:1083)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1880)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Mar 01, 2016 10:40:09 PM org.apache.catalina.core.StandardContext resourcesStart
+SEVERE: Error starting static Resources
+java.lang.IllegalArgumentException: Invalid or unreadable WAR file : error in opening zip file
+	at org.apache.naming.resources.WARDirContext.setDocBase(WARDirContext.java:136)
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:5089)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5269)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:901)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:877)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:632)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:1083)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1880)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Mar 01, 2016 10:40:09 PM org.apache.catalina.core.ContainerBase addChildInternal
+SEVERE: ContainerBase.addChild: start: 
+org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/JaiKiran_Assignment2]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:154)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:901)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:877)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:632)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:1083)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1880)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.catalina.LifecycleException: Error in resourceStart()
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5270)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 10 more
+Mar 01, 2016 10:40:09 PM org.apache.catalina.startup.HostConfig deployWAR
+SEVERE: Error deploying web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment2.war
+java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/JaiKiran_Assignment2]]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:904)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:877)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:632)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:1083)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1880)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Mar 01, 2016 10:40:09 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment2.war has finished in 104 ms
+Mar 01, 2016 10:40:19 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/JaiKiran_Assignment2]
+Mar 01, 2016 10:40:19 PM org.apache.catalina.deploy.NamingResources cleanUp
+WARNING: Failed to retrieve JNDI naming context for container [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/JaiKiran_Assignment2]] so no cleanup was performed for that container
+javax.naming.NameNotFoundException: Name [comp/env] is not bound in this Context. Unable to find [comp].
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:819)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:167)
+	at org.apache.catalina.deploy.NamingResources.cleanUp(NamingResources.java:986)
+	at org.apache.catalina.deploy.NamingResources.stopInternal(NamingResources.java:968)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:232)
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5676)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:232)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:272)
+	at org.apache.catalina.core.ContainerBase.removeChild(ContainerBase.java:1041)
+	at org.apache.catalina.startup.HostConfig.undeploy(HostConfig.java:1501)
+	at org.apache.catalina.startup.HostConfig.checkResources(HostConfig.java:1428)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1649)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:328)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:117)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1374)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1530)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1540)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1519)
+	at java.lang.Thread.run(Thread.java:745)
+Mar 01, 2016 10:40:20 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment2.war
+Mar 01, 2016 10:40:20 PM org.apache.catalina.deploy.WebXml setVersion
+WARNING: Unknown version string [3.1]. Default version will be used.
+Mar 01, 2016 10:40:20 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment2.war has finished in 517 ms
+Exception in reading file ::java.io.FileNotFoundException: rep-jaikiranuncc.rhcloud.com/JaiKiran_Assignment2/static/UserDB.txt (No such file or directory)
+Exception in reading file ::java.io.FileNotFoundException: rep-jaikiranuncc.rhcloud.com/JaiKiran_Assignment2/static/UserDB.txt (No such file or directory)
+Exception in reading file ::java.io.FileNotFoundException: rep-jaikiranuncc.rhcloud.com/JaiKiran_Assignment2/static/UserDB.txt (No such file or directory)
+Path is ::rep-jaikiranuncc.rhcloud.com/JaiKiran_Assignment2/static
+Exception in reading file ::java.io.FileNotFoundException: rep-jaikiranuncc.rhcloud.com/JaiKiran_Assignment2/static/StudyDB.txt (No such file or directory)
+Path is ::rep-jaikiranuncc.rhcloud.com/JaiKiran_Assignment2/static
+Exception in reading file ::java.io.FileNotFoundException: rep-jaikiranuncc.rhcloud.com/JaiKiran_Assignment2/static/StudyDB.txt (No such file or directory)
+Exception in reading file ::java.io.FileNotFoundException: rep-jaikiranuncc.rhcloud.com/JaiKiran_Assignment2/static/UserDB.txt (No such file or directory)
+Mar 01, 2016 11:04:20 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/JaiKiran_Assignment2]
+Mar 01, 2016 11:04:20 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment2.war
+Mar 01, 2016 11:04:20 PM org.apache.catalina.startup.ContextConfig beforeStart
+SEVERE: Exception fixing docBase for context [/JaiKiran_Assignment2]
+java.util.zip.ZipException: error in opening zip file
+	at java.util.zip.ZipFile.open(Native Method)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:215)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:145)
+	at java.util.jar.JarFile.<init>(JarFile.java:154)
+	at java.util.jar.JarFile.<init>(JarFile.java:91)
+	at sun.net.www.protocol.jar.URLJarFile.<init>(URLJarFile.java:93)
+	at sun.net.www.protocol.jar.URLJarFile.getJarFile(URLJarFile.java:69)
+	at sun.net.www.protocol.jar.JarFileFactory.get(JarFileFactory.java:99)
+	at sun.net.www.protocol.jar.JarURLConnection.connect(JarURLConnection.java:122)
+	at sun.net.www.protocol.jar.JarURLConnection.getJarFile(JarURLConnection.java:89)
+	at org.apache.catalina.startup.ExpandWar.validate(ExpandWar.java:220)
+	at org.apache.catalina.startup.ContextConfig.fixDocBase(ContextConfig.java:732)
+	at org.apache.catalina.startup.ContextConfig.beforeStart(ContextConfig.java:850)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:376)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:117)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:402)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:147)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:901)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:877)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:632)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:1083)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1880)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Mar 01, 2016 11:04:20 PM org.apache.catalina.core.StandardContext resourcesStart
+SEVERE: Error starting static Resources
+java.lang.IllegalArgumentException: Invalid or unreadable WAR file : error in opening zip file
+	at org.apache.naming.resources.WARDirContext.setDocBase(WARDirContext.java:136)
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:5089)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5269)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:901)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:877)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:632)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:1083)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1880)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Mar 01, 2016 11:04:20 PM org.apache.catalina.core.ContainerBase addChildInternal
+SEVERE: ContainerBase.addChild: start: 
+org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/JaiKiran_Assignment2]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:154)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:901)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:877)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:632)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:1083)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1880)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.catalina.LifecycleException: Error in resourceStart()
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5270)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 10 more
+Mar 01, 2016 11:04:20 PM org.apache.catalina.startup.HostConfig deployWAR
+SEVERE: Error deploying web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment2.war
+java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/JaiKiran_Assignment2]]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:904)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:877)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:632)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:1083)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1880)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Mar 01, 2016 11:04:20 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment2.war has finished in 9 ms
+Mar 01, 2016 11:04:30 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/JaiKiran_Assignment2]
+Mar 01, 2016 11:04:30 PM org.apache.catalina.deploy.NamingResources cleanUp
+WARNING: Failed to retrieve JNDI naming context for container [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/JaiKiran_Assignment2]] so no cleanup was performed for that container
+javax.naming.NameNotFoundException: Name [comp/env] is not bound in this Context. Unable to find [comp].
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:819)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:167)
+	at org.apache.catalina.deploy.NamingResources.cleanUp(NamingResources.java:986)
+	at org.apache.catalina.deploy.NamingResources.stopInternal(NamingResources.java:968)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:232)
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5676)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:232)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:272)
+	at org.apache.catalina.core.ContainerBase.removeChild(ContainerBase.java:1041)
+	at org.apache.catalina.startup.HostConfig.undeploy(HostConfig.java:1501)
+	at org.apache.catalina.startup.HostConfig.checkResources(HostConfig.java:1428)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1649)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:328)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:117)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1374)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1530)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1540)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1519)
+	at java.lang.Thread.run(Thread.java:745)
+Mar 01, 2016 11:04:30 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment2.war
+Mar 01, 2016 11:04:30 PM org.apache.catalina.deploy.WebXml setVersion
+WARNING: Unknown version string [3.1]. Default version will be used.
+Mar 01, 2016 11:04:31 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment2.war has finished in 836 ms
+Path is ::rep-jaikiranuncc.rhcloud.com/JaiKiran_Assignment2/static
+Context Path is ::null
+Path is ::rep-jaikiranuncc.rhcloud.com/JaiKiran_Assignment2/static
+Context Path is ::null
+Path is ::rep-jaikiranuncc.rhcloud.com/JaiKiran_Assignment2/static
+Context Path is ::null
+Path is ::rep-jaikiranuncc.rhcloud.com/JaiKiran_Assignment2/static
+Context Path is ::null
+Path is ::rep-jaikiranuncc.rhcloud.com/JaiKiran_Assignment2/static
+Context Path is ::null
+Path is ::rep-jaikiranuncc.rhcloud.com/JaiKiran_Assignment2/static
+Context Path is ::null
+Exception in reading file ::java.io.FileNotFoundException: rep-jaikiranuncc.rhcloud.com/JaiKiran_Assignment2/static/UserDB.txt (No such file or directory)
+Mar 02, 2016 12:23:32 AM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/JaiKiran_Assignment2]
+Mar 02, 2016 12:23:42 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment2.war
+Mar 02, 2016 12:23:42 AM org.apache.catalina.deploy.WebXml setVersion
+WARNING: Unknown version string [3.1]. Default version will be used.
+Mar 02, 2016 12:23:43 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment2.war has finished in 502 ms
+Context Path is ::null
+Context Path is ::null
+Context Path is ::null
+Path is ::/var/lib/openshift/56b6ac642d5271fba8000026/app-root/data/
+Path is ::/var/lib/openshift/56b6ac642d5271fba8000026/app-root/data/
+Context Path is ::null
+Context Path is ::null
+Context Path is ::null
+Path is ::/var/lib/openshift/56b6ac642d5271fba8000026/app-root/data/
+Path is ::/var/lib/openshift/56b6ac642d5271fba8000026/app-root/data/
+Path is ::/var/lib/openshift/56b6ac642d5271fba8000026/app-root/data/
+Context Path is ::null
+Context Path is ::null
+Context Path is ::null
+Context Path is ::null
+Context Path is ::null
+Context Path is ::null
+Mar 03, 2016 2:50:21 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-127.8.191.129-8080"]
+Mar 03, 2016 2:50:21 AM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Mar 03, 2016 2:50:21 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-127.8.191.129-8080"]
+Mar 03, 2016 2:50:21 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-127.8.191.129-8080"]
+Mar 04, 2016 6:13:31 PM org.apache.catalina.startup.Catalina addClusterRuleSet
+INFO: Cluster RuleSet not found due to [java.lang.ClassNotFoundException: org.apache.catalina.ha.ClusterRuleSet]. Cluster configuration disabled.
+Mar 04, 2016 6:13:31 PM org.apache.catalina.startup.Catalina addClusterRuleSet
+INFO: Cluster RuleSet not found due to [java.lang.ClassNotFoundException: org.apache.catalina.ha.ClusterRuleSet]. Cluster configuration disabled.
+Mar 04, 2016 6:13:32 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: :/usr/java/packages/lib/i386:/lib:/usr/lib
+Mar 04, 2016 6:13:33 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-127.8.191.129-8080"]
+Mar 04, 2016 6:13:33 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 1514 ms
+Mar 04, 2016 6:13:33 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Mar 04, 2016 6:13:33 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.54
+Mar 04, 2016 6:13:33 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/ROOT.war
+Mar 04, 2016 6:13:35 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/ROOT.war has finished in 2,401 ms
+Mar 04, 2016 6:13:35 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment1.war
+Mar 04, 2016 6:13:36 PM org.apache.catalina.deploy.WebXml setVersion
+WARNING: Unknown version string [3.1]. Default version will be used.
+Mar 04, 2016 6:13:37 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment1.war has finished in 1,462 ms
+Mar 04, 2016 6:13:37 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment2.war
+Mar 04, 2016 6:13:37 PM org.apache.catalina.deploy.WebXml setVersion
+WARNING: Unknown version string [3.1]. Default version will be used.
+Mar 04, 2016 6:13:38 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment2.war has finished in 1,395 ms
+Mar 04, 2016 6:13:38 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-127.8.191.129-8080"]
+Mar 04, 2016 6:13:38 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 5458 ms
+Context Path is ::null
+Context Path is ::null
+Mar 04, 2016 6:13:44 PM org.apache.jasper.compiler.TldLocationsCache tldScanJar
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Context Path is ::null
+Context Path is ::null
+Context Path is ::null
+Path is ::/var/lib/openshift/56b6ac642d5271fba8000026/app-root/data/
+Path is ::/var/lib/openshift/56b6ac642d5271fba8000026/app-root/data/
+Context Path is ::null
+Path is ::/var/lib/openshift/56b6ac642d5271fba8000026/app-root/data/
+Path is ::/var/lib/openshift/56b6ac642d5271fba8000026/app-root/data/
+Context Path is ::null
+Path is ::/var/lib/openshift/56b6ac642d5271fba8000026/app-root/data/
+Path is ::/var/lib/openshift/56b6ac642d5271fba8000026/app-root/data/
+Context Path is ::null
+Path is ::/var/lib/openshift/56b6ac642d5271fba8000026/app-root/data/
+Path is ::/var/lib/openshift/56b6ac642d5271fba8000026/app-root/data/
+Path is ::/var/lib/openshift/56b6ac642d5271fba8000026/app-root/data/
+Path is ::/var/lib/openshift/56b6ac642d5271fba8000026/app-root/data/
+Path is ::/var/lib/openshift/56b6ac642d5271fba8000026/app-root/data/
+Path is ::/var/lib/openshift/56b6ac642d5271fba8000026/app-root/data/
+Context Path is ::null
+Path is ::/var/lib/openshift/56b6ac642d5271fba8000026/app-root/data/
+Context Path is ::null
+Context Path is ::null
+Context Path is ::null
+Path is ::/var/lib/openshift/56b6ac642d5271fba8000026/app-root/data/
+Path is ::/var/lib/openshift/56b6ac642d5271fba8000026/app-root/data/
+Path is ::/var/lib/openshift/56b6ac642d5271fba8000026/app-root/data/
+Context Path is ::null
+Context Path is ::null
+Mar 05, 2016 8:49:51 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-127.8.191.129-8080"]
+Mar 05, 2016 8:49:51 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Mar 05, 2016 8:49:52 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-127.8.191.129-8080"]
+Mar 05, 2016 8:49:52 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-127.8.191.129-8080"]
+Mar 05, 2016 10:53:13 PM org.apache.catalina.startup.Catalina addClusterRuleSet
+INFO: Cluster RuleSet not found due to [java.lang.ClassNotFoundException: org.apache.catalina.ha.ClusterRuleSet]. Cluster configuration disabled.
+Mar 05, 2016 10:53:13 PM org.apache.catalina.startup.Catalina addClusterRuleSet
+INFO: Cluster RuleSet not found due to [java.lang.ClassNotFoundException: org.apache.catalina.ha.ClusterRuleSet]. Cluster configuration disabled.
+Mar 05, 2016 10:53:14 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: :/usr/java/packages/lib/i386:/lib:/usr/lib
+Mar 05, 2016 10:53:14 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-127.8.191.129-8080"]
+Mar 05, 2016 10:53:14 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 1710 ms
+Mar 05, 2016 10:53:14 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Mar 05, 2016 10:53:14 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.54
+Mar 05, 2016 10:53:15 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/ROOT.war
+Mar 05, 2016 10:53:20 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/ROOT.war has finished in 5,482 ms
+Mar 05, 2016 10:53:20 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment1.war
+Mar 05, 2016 10:53:20 PM org.apache.catalina.deploy.WebXml setVersion
+WARNING: Unknown version string [3.1]. Default version will be used.
+Mar 05, 2016 10:53:21 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment1.war has finished in 1,293 ms
+Mar 05, 2016 10:53:21 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment2.war
+Mar 05, 2016 10:53:22 PM org.apache.catalina.deploy.WebXml setVersion
+WARNING: Unknown version string [3.1]. Default version will be used.
+Mar 05, 2016 10:53:23 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment2.war has finished in 1,226 ms
+Mar 05, 2016 10:53:23 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-127.8.191.129-8080"]
+Mar 05, 2016 10:53:23 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 8273 ms
+Mar 07, 2016 2:50:48 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-127.8.191.129-8080"]
+Mar 07, 2016 2:50:48 AM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Mar 07, 2016 2:50:49 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-127.8.191.129-8080"]
+Mar 07, 2016 2:50:49 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-127.8.191.129-8080"]
+Mar 12, 2016 7:22:57 PM org.apache.catalina.startup.Catalina addClusterRuleSet
+INFO: Cluster RuleSet not found due to [java.lang.ClassNotFoundException: org.apache.catalina.ha.ClusterRuleSet]. Cluster configuration disabled.
+Mar 12, 2016 7:22:58 PM org.apache.catalina.startup.Catalina addClusterRuleSet
+INFO: Cluster RuleSet not found due to [java.lang.ClassNotFoundException: org.apache.catalina.ha.ClusterRuleSet]. Cluster configuration disabled.
+Mar 12, 2016 7:22:58 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: :/usr/java/packages/lib/i386:/lib:/usr/lib
+Mar 12, 2016 7:22:59 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-127.8.191.129-8080"]
+Mar 12, 2016 7:22:59 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 1458 ms
+Mar 12, 2016 7:22:59 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Mar 12, 2016 7:22:59 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.54
+Mar 12, 2016 7:22:59 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/ROOT.war
+Mar 12, 2016 7:23:02 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/ROOT.war has finished in 3,059 ms
+Mar 12, 2016 7:23:02 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment1.war
+Mar 12, 2016 7:23:02 PM org.apache.catalina.deploy.WebXml setVersion
+WARNING: Unknown version string [3.1]. Default version will be used.
+Mar 12, 2016 7:23:04 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment1.war has finished in 1,714 ms
+Mar 12, 2016 7:23:04 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment2.war
+Mar 12, 2016 7:23:04 PM org.apache.catalina.deploy.WebXml setVersion
+WARNING: Unknown version string [3.1]. Default version will be used.
+Mar 12, 2016 7:23:06 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment2.war has finished in 1,849 ms
+Mar 12, 2016 7:23:06 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-127.8.191.129-8080"]
+Mar 12, 2016 7:23:06 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 6883 ms
+Mar 13, 2016 8:48:31 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-127.8.191.129-8080"]
+Mar 13, 2016 8:48:31 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Mar 13, 2016 8:48:31 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-127.8.191.129-8080"]
+Mar 13, 2016 8:48:31 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-127.8.191.129-8080"]
+Mar 20, 2016 10:15:15 PM org.apache.catalina.startup.Catalina addClusterRuleSet
+INFO: Cluster RuleSet not found due to [java.lang.ClassNotFoundException: org.apache.catalina.ha.ClusterRuleSet]. Cluster configuration disabled.
+Mar 20, 2016 10:15:15 PM org.apache.catalina.startup.Catalina addClusterRuleSet
+INFO: Cluster RuleSet not found due to [java.lang.ClassNotFoundException: org.apache.catalina.ha.ClusterRuleSet]. Cluster configuration disabled.
+Mar 20, 2016 10:15:16 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: :/usr/java/packages/lib/i386:/lib:/usr/lib
+Mar 20, 2016 10:15:17 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-127.8.191.129-8080"]
+Mar 20, 2016 10:15:17 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 1686 ms
+Mar 20, 2016 10:15:17 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Mar 20, 2016 10:15:17 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.54
+Mar 20, 2016 10:15:17 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/ROOT.war
+Mar 20, 2016 10:15:19 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/ROOT.war has finished in 2,491 ms
+Mar 20, 2016 10:15:19 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment1.war
+Mar 20, 2016 10:15:20 PM org.apache.catalina.deploy.WebXml setVersion
+WARNING: Unknown version string [3.1]. Default version will be used.
+Mar 20, 2016 10:15:21 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment1.war has finished in 1,297 ms
+Mar 20, 2016 10:15:21 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment2.war
+Mar 20, 2016 10:15:21 PM org.apache.catalina.deploy.WebXml setVersion
+WARNING: Unknown version string [3.1]. Default version will be used.
+Mar 20, 2016 10:15:22 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment2.war has finished in 1,577 ms
+Mar 20, 2016 10:15:22 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-127.8.191.129-8080"]
+Mar 20, 2016 10:15:22 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 5595 ms
+Context Path is ::null
+Context Path is ::null
+Context Path is ::null
+Mar 20, 2016 10:18:53 PM org.apache.jasper.compiler.TldLocationsCache tldScanJar
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Context Path is ::null
+Path is ::/var/lib/openshift/56b6ac642d5271fba8000026/app-root/data/
+Path is ::/var/lib/openshift/56b6ac642d5271fba8000026/app-root/data/
+Context Path is ::null
+Path is ::/var/lib/openshift/56b6ac642d5271fba8000026/app-root/data/
+Path is ::/var/lib/openshift/56b6ac642d5271fba8000026/app-root/data/
+Context Path is ::null
+Path is ::/var/lib/openshift/56b6ac642d5271fba8000026/app-root/data/
+Context Path is ::null
+Path is ::/var/lib/openshift/56b6ac642d5271fba8000026/app-root/data/
+Path is ::/var/lib/openshift/56b6ac642d5271fba8000026/app-root/data/
+Path is ::/var/lib/openshift/56b6ac642d5271fba8000026/app-root/data/
+Path is ::/var/lib/openshift/56b6ac642d5271fba8000026/app-root/data/
+Path is ::/var/lib/openshift/56b6ac642d5271fba8000026/app-root/data/
+Context Path is ::null
+Context Path is ::null
+Path is ::/var/lib/openshift/56b6ac642d5271fba8000026/app-root/data/
+Context Path is ::null
+Context Path is ::null
+Context Path is ::null
+Path is ::/var/lib/openshift/56b6ac642d5271fba8000026/app-root/data/
+Context Path is ::null
+Context Path is ::null
+Context Path is ::null
+Context Path is ::null
+Path is ::/var/lib/openshift/56b6ac642d5271fba8000026/app-root/data/
+Path is ::/var/lib/openshift/56b6ac642d5271fba8000026/app-root/data/
+Path is ::/var/lib/openshift/56b6ac642d5271fba8000026/app-root/data/
+Context Path is ::null
+Path is ::/var/lib/openshift/56b6ac642d5271fba8000026/app-root/data/
+Path is ::/var/lib/openshift/56b6ac642d5271fba8000026/app-root/data/
+Context Path is ::null
+Context Path is ::null
+Context Path is ::null
+Context Path is ::null
+Context Path is ::null
+Context Path is ::null
+Context Path is ::null
+Context Path is ::null
+Context Path is ::null
+Path is ::/var/lib/openshift/56b6ac642d5271fba8000026/app-root/data/
+Mar 23, 2016 2:47:45 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-127.8.191.129-8080"]
+Mar 23, 2016 2:47:46 AM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Mar 23, 2016 2:47:46 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-127.8.191.129-8080"]
+Mar 23, 2016 2:47:46 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-127.8.191.129-8080"]
+Mar 23, 2016 12:40:01 PM org.apache.catalina.startup.Catalina addClusterRuleSet
+INFO: Cluster RuleSet not found due to [java.lang.ClassNotFoundException: org.apache.catalina.ha.ClusterRuleSet]. Cluster configuration disabled.
+Mar 23, 2016 12:40:01 PM org.apache.catalina.startup.Catalina addClusterRuleSet
+INFO: Cluster RuleSet not found due to [java.lang.ClassNotFoundException: org.apache.catalina.ha.ClusterRuleSet]. Cluster configuration disabled.
+Mar 23, 2016 12:40:03 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: :/usr/java/packages/lib/i386:/lib:/usr/lib
+Mar 23, 2016 12:40:04 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-127.8.191.129-8080"]
+Mar 23, 2016 12:40:04 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 2806 ms
+Mar 23, 2016 12:40:04 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Mar 23, 2016 12:40:04 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.54
+Mar 23, 2016 12:40:04 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/ROOT.war
+Mar 23, 2016 12:40:09 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/ROOT.war has finished in 4,595 ms
+Mar 23, 2016 12:40:09 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment1.war
+Mar 23, 2016 12:40:09 PM org.apache.catalina.deploy.WebXml setVersion
+WARNING: Unknown version string [3.1]. Default version will be used.
+Mar 23, 2016 12:40:11 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment1.war has finished in 2,094 ms
+Mar 23, 2016 12:40:11 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment2.war
+Mar 23, 2016 12:40:11 PM org.apache.catalina.deploy.WebXml setVersion
+WARNING: Unknown version string [3.1]. Default version will be used.
+Mar 23, 2016 12:40:13 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment2.war has finished in 2,101 ms
+Mar 23, 2016 12:40:13 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-127.8.191.129-8080"]
+Mar 23, 2016 12:40:13 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 9137 ms
+Mar 24, 2016 2:47:40 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-127.8.191.129-8080"]
+Mar 24, 2016 2:47:40 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Mar 24, 2016 2:47:40 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-127.8.191.129-8080"]
+Mar 24, 2016 2:47:40 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-127.8.191.129-8080"]
+Mar 28, 2016 10:28:55 PM org.apache.catalina.startup.Catalina addClusterRuleSet
+INFO: Cluster RuleSet not found due to [java.lang.ClassNotFoundException: org.apache.catalina.ha.ClusterRuleSet]. Cluster configuration disabled.
+Mar 28, 2016 10:28:55 PM org.apache.catalina.startup.Catalina addClusterRuleSet
+INFO: Cluster RuleSet not found due to [java.lang.ClassNotFoundException: org.apache.catalina.ha.ClusterRuleSet]. Cluster configuration disabled.
+Mar 28, 2016 10:28:56 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: :/usr/java/packages/lib/i386:/lib:/usr/lib
+Mar 28, 2016 10:28:56 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-127.8.191.129-8080"]
+Mar 28, 2016 10:28:56 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 1513 ms
+Mar 28, 2016 10:28:56 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Mar 28, 2016 10:28:56 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.54
+Mar 28, 2016 10:28:57 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/ROOT.war
+Mar 28, 2016 10:28:59 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/ROOT.war has finished in 2,418 ms
+Mar 28, 2016 10:28:59 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment1.war
+Mar 28, 2016 10:28:59 PM org.apache.catalina.deploy.WebXml setVersion
+WARNING: Unknown version string [3.1]. Default version will be used.
+Mar 28, 2016 10:29:01 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment1.war has finished in 2,305 ms
+Mar 28, 2016 10:29:01 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment2.war
+Mar 28, 2016 10:29:02 PM org.apache.catalina.deploy.WebXml setVersion
+WARNING: Unknown version string [3.1]. Default version will be used.
+Mar 28, 2016 10:29:03 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment2.war has finished in 1,602 ms
+Mar 28, 2016 10:29:03 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-127.8.191.129-8080"]
+Mar 28, 2016 10:29:03 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 6667 ms
+Context Path is ::null
+Mar 30, 2016 2:49:25 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-127.8.191.129-8080"]
+Mar 30, 2016 2:49:25 AM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Mar 30, 2016 2:49:26 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-127.8.191.129-8080"]
+Mar 30, 2016 2:49:26 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-127.8.191.129-8080"]
+Mar 30, 2016 1:17:15 PM org.apache.catalina.startup.Catalina addClusterRuleSet
+INFO: Cluster RuleSet not found due to [java.lang.ClassNotFoundException: org.apache.catalina.ha.ClusterRuleSet]. Cluster configuration disabled.
+Mar 30, 2016 1:17:15 PM org.apache.catalina.startup.Catalina addClusterRuleSet
+INFO: Cluster RuleSet not found due to [java.lang.ClassNotFoundException: org.apache.catalina.ha.ClusterRuleSet]. Cluster configuration disabled.
+Mar 30, 2016 1:17:16 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /opt/rh/mysql55/root/usr/lib64:/usr/java/packages/lib/i386:/lib:/usr/lib
+Mar 30, 2016 1:17:17 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-127.8.191.129-8080"]
+Mar 30, 2016 1:17:17 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 1646 ms
+Mar 30, 2016 1:17:17 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Mar 30, 2016 1:17:17 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.54
+Mar 30, 2016 1:17:17 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/ROOT.war
+Mar 30, 2016 1:17:20 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/ROOT.war has finished in 2,984 ms
+Mar 30, 2016 1:17:20 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment1.war
+Mar 30, 2016 1:17:20 PM org.apache.catalina.deploy.WebXml setVersion
+WARNING: Unknown version string [3.1]. Default version will be used.
+Mar 30, 2016 1:17:21 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment1.war has finished in 1,190 ms
+Mar 30, 2016 1:17:21 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment2.war
+Mar 30, 2016 1:17:22 PM org.apache.catalina.deploy.WebXml setVersion
+WARNING: Unknown version string [3.1]. Default version will be used.
+Mar 30, 2016 1:17:23 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment2.war has finished in 1,318 ms
+Mar 30, 2016 1:17:23 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-127.8.191.129-8080"]
+Mar 30, 2016 1:17:23 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 5819 ms
+Mar 30, 2016 1:44:43 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment3.war
+Mar 30, 2016 1:44:43 PM org.apache.catalina.deploy.WebXml setVersion
+WARNING: Unknown version string [3.1]. Default version will be used.
+Mar 30, 2016 1:44:45 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment3.war has finished in 2,264 ms
+Mar 30, 2016 1:45:17 PM org.apache.jasper.compiler.TldLocationsCache tldScanJar
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Mar 30, 2016 1:45:32 PM com.assignment3.util.DataAccess getData
+SEVERE: null
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'REP.USER' doesn't exist
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1053)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4120)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4052)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2503)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2664)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2794)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:2155)
+	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:2322)
+	at org.apache.tomcat.dbcp.dbcp.DelegatingPreparedStatement.executeQuery(DelegatingPreparedStatement.java:97)
+	at org.apache.tomcat.dbcp.dbcp.DelegatingPreparedStatement.executeQuery(DelegatingPreparedStatement.java:97)
+	at com.assignment3.util.DataAccess.getData(DataAccess.java:50)
+	at com.assignment3.dao.userDAOImpl.valiadteLogin(userDAOImpl.java:137)
+	at com.assignment3.controllers.UserController.doPost(UserController.java:57)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:646)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.valves.RemoteIpValve.invoke(RemoteIpValve.java:683)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1042)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:607)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:316)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+javax.mail.AuthenticationFailedException: 534-5.7.14 <https://accounts.google.com/signin/continue?sarp=1&scc=1&plt=AKgnsbtA
+534-5.7.14 ofTOR93XmRZynNWT7_Iv8qK7R_PWgAOD47AwPqL3nkjM4B_GeJcbYWEyBTHqNlKM7JARZ6
+534-5.7.14 UHZWWfnj4G8dWCTn_eyNolm_974yKH0Kf44aiIeAW8H7Oi2eh43ahwueUIiCaB2NtF4zGj
+534-5.7.14 K2DfD_fXLLdoz2WR1anR23aKo1lIIMz2v5kMifXZekte5Z3kV-pGCObln3qogI01Q20Z97
+534-5.7.14 ylx4dU-57E75N-uRIRl4eL0pZoSgo> Please log in via your web browser and
+534-5.7.14 then try again.
+534-5.7.14  Learn more at
+534 5.7.14  https://support.google.com/mail/answer/78754 f108sm2384380qgf.15 - gsmtp
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:826)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:761)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:685)
+	at javax.mail.Service.connect(Service.java:317)
+	at javax.mail.Service.connect(Service.java:176)
+	at javax.mail.Service.connect(Service.java:125)
+	at javax.mail.Transport.send0(Transport.java:194)
+	at javax.mail.Transport.send(Transport.java:124)
+	at com.assignment3.util.EmailUtil.sendMessage(EmailUtil.java:65)
+	at com.assignment3.controllers.UserController.doPost(UserController.java:218)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:646)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.valves.RemoteIpValve.invoke(RemoteIpValve.java:683)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1042)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:607)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:314)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Mar 30, 2016 3:10:07 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/JaiKiran_Assignment3]
+Mar 30, 2016 3:10:07 PM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [/JaiKiran_Assignment3] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Mar 30, 2016 3:10:07 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment3.war
+Mar 30, 2016 3:10:07 PM org.apache.catalina.startup.ContextConfig beforeStart
+SEVERE: Exception fixing docBase for context [/JaiKiran_Assignment3]
+java.util.zip.ZipException: error in opening zip file
+	at java.util.zip.ZipFile.open(Native Method)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:215)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:145)
+	at java.util.jar.JarFile.<init>(JarFile.java:154)
+	at java.util.jar.JarFile.<init>(JarFile.java:91)
+	at sun.net.www.protocol.jar.URLJarFile.<init>(URLJarFile.java:93)
+	at sun.net.www.protocol.jar.URLJarFile.getJarFile(URLJarFile.java:69)
+	at sun.net.www.protocol.jar.JarFileFactory.get(JarFileFactory.java:99)
+	at sun.net.www.protocol.jar.JarURLConnection.connect(JarURLConnection.java:122)
+	at sun.net.www.protocol.jar.JarURLConnection.getJarFile(JarURLConnection.java:89)
+	at org.apache.catalina.startup.ExpandWar.validate(ExpandWar.java:220)
+	at org.apache.catalina.startup.ContextConfig.fixDocBase(ContextConfig.java:732)
+	at org.apache.catalina.startup.ContextConfig.beforeStart(ContextConfig.java:850)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:376)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:117)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:402)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:147)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:901)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:877)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:632)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:1083)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1880)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Mar 30, 2016 3:10:07 PM org.apache.catalina.core.StandardContext resourcesStart
+SEVERE: Error starting static Resources
+java.lang.IllegalArgumentException: Invalid or unreadable WAR file : error in opening zip file
+	at org.apache.naming.resources.WARDirContext.setDocBase(WARDirContext.java:136)
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:5089)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5269)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:901)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:877)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:632)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:1083)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1880)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Mar 30, 2016 3:10:07 PM org.apache.catalina.core.ContainerBase addChildInternal
+SEVERE: ContainerBase.addChild: start: 
+org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/JaiKiran_Assignment3]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:154)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:901)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:877)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:632)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:1083)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1880)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.catalina.LifecycleException: Error in resourceStart()
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5270)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 10 more
+Mar 30, 2016 3:10:07 PM org.apache.catalina.startup.HostConfig deployWAR
+SEVERE: Error deploying web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment3.war
+java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/JaiKiran_Assignment3]]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:904)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:877)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:632)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:1083)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1880)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Mar 30, 2016 3:10:07 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment3.war has finished in 102 ms
+Mar 30, 2016 3:10:17 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/JaiKiran_Assignment3]
+Mar 30, 2016 3:10:17 PM org.apache.catalina.deploy.NamingResources cleanUp
+WARNING: Failed to retrieve JNDI naming context for container [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/JaiKiran_Assignment3]] so no cleanup was performed for that container
+javax.naming.NameNotFoundException: Name [comp/env] is not bound in this Context. Unable to find [comp].
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:819)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:167)
+	at org.apache.catalina.deploy.NamingResources.cleanUp(NamingResources.java:986)
+	at org.apache.catalina.deploy.NamingResources.stopInternal(NamingResources.java:968)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:232)
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5676)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:232)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:272)
+	at org.apache.catalina.core.ContainerBase.removeChild(ContainerBase.java:1041)
+	at org.apache.catalina.startup.HostConfig.undeploy(HostConfig.java:1501)
+	at org.apache.catalina.startup.HostConfig.checkResources(HostConfig.java:1428)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1649)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:328)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:117)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1374)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1530)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1540)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1519)
+	at java.lang.Thread.run(Thread.java:745)
+Mar 30, 2016 3:10:17 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment3.war
+Mar 30, 2016 3:10:18 PM org.apache.catalina.deploy.WebXml setVersion
+WARNING: Unknown version string [3.1]. Default version will be used.
+Mar 30, 2016 3:10:19 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment3.war has finished in 2,152 ms
+Mar 31, 2016 8:47:53 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-127.8.191.129-8080"]
+Mar 31, 2016 8:47:54 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Mar 31, 2016 8:47:54 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-127.8.191.129-8080"]
+Mar 31, 2016 8:47:54 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-127.8.191.129-8080"]
+Apr 01, 2016 4:43:31 PM org.apache.catalina.startup.Catalina addClusterRuleSet
+INFO: Cluster RuleSet not found due to [java.lang.ClassNotFoundException: org.apache.catalina.ha.ClusterRuleSet]. Cluster configuration disabled.
+Apr 01, 2016 4:43:31 PM org.apache.catalina.startup.Catalina addClusterRuleSet
+INFO: Cluster RuleSet not found due to [java.lang.ClassNotFoundException: org.apache.catalina.ha.ClusterRuleSet]. Cluster configuration disabled.
+Apr 01, 2016 4:43:31 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /opt/rh/mysql55/root/usr/lib64:/usr/java/packages/lib/i386:/lib:/usr/lib
+Apr 01, 2016 4:43:32 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-127.8.191.129-8080"]
+Apr 01, 2016 4:43:32 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 1404 ms
+Apr 01, 2016 4:43:32 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Apr 01, 2016 4:43:32 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.54
+Apr 01, 2016 4:43:32 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/ROOT.war
+Apr 01, 2016 4:43:35 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/ROOT.war has finished in 2,620 ms
+Apr 01, 2016 4:43:35 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment1.war
+Apr 01, 2016 4:43:35 PM org.apache.catalina.deploy.WebXml setVersion
+WARNING: Unknown version string [3.1]. Default version will be used.
+Apr 01, 2016 4:43:36 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment1.war has finished in 1,478 ms
+Apr 01, 2016 4:43:36 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment2.war
+Apr 01, 2016 4:43:37 PM org.apache.catalina.deploy.WebXml setVersion
+WARNING: Unknown version string [3.1]. Default version will be used.
+Apr 01, 2016 4:43:38 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment2.war has finished in 1,221 ms
+Apr 01, 2016 4:43:38 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment3.war
+Apr 01, 2016 4:43:38 PM org.apache.catalina.deploy.WebXml setVersion
+WARNING: Unknown version string [3.1]. Default version will be used.
+Apr 01, 2016 4:43:39 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment3.war has finished in 1,462 ms
+Apr 01, 2016 4:43:39 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-127.8.191.129-8080"]
+Apr 01, 2016 4:43:39 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 7168 ms
+Apr 02, 2016 8:47:31 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-127.8.191.129-8080"]
+Apr 02, 2016 8:47:32 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Apr 02, 2016 8:47:33 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-127.8.191.129-8080"]
+Apr 02, 2016 8:47:33 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-127.8.191.129-8080"]
+Apr 02, 2016 9:22:55 PM org.apache.catalina.startup.Catalina addClusterRuleSet
+INFO: Cluster RuleSet not found due to [java.lang.ClassNotFoundException: org.apache.catalina.ha.ClusterRuleSet]. Cluster configuration disabled.
+Apr 02, 2016 9:22:55 PM org.apache.catalina.startup.Catalina addClusterRuleSet
+INFO: Cluster RuleSet not found due to [java.lang.ClassNotFoundException: org.apache.catalina.ha.ClusterRuleSet]. Cluster configuration disabled.
+Apr 02, 2016 9:22:56 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /opt/rh/mysql55/root/usr/lib64:/usr/java/packages/lib/i386:/lib:/usr/lib
+Apr 02, 2016 9:22:56 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-127.8.191.129-8080"]
+Apr 02, 2016 9:22:56 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 1584 ms
+Apr 02, 2016 9:22:56 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Apr 02, 2016 9:22:56 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.54
+Apr 02, 2016 9:22:56 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/ROOT.war
+Apr 02, 2016 9:22:59 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/ROOT.war has finished in 3,116 ms
+Apr 02, 2016 9:22:59 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment1.war
+Apr 02, 2016 9:23:00 PM org.apache.catalina.deploy.WebXml setVersion
+WARNING: Unknown version string [3.1]. Default version will be used.
+Apr 02, 2016 9:23:01 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment1.war has finished in 1,582 ms
+Apr 02, 2016 9:23:01 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment2.war
+Apr 02, 2016 9:23:01 PM org.apache.catalina.deploy.WebXml setVersion
+WARNING: Unknown version string [3.1]. Default version will be used.
+Apr 02, 2016 9:23:03 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment2.war has finished in 1,872 ms
+Apr 02, 2016 9:23:03 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment3.war
+Apr 02, 2016 9:23:03 PM org.apache.catalina.deploy.WebXml setVersion
+WARNING: Unknown version string [3.1]. Default version will be used.
+Apr 02, 2016 9:23:06 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment3.war has finished in 2,916 ms
+Apr 02, 2016 9:23:06 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-127.8.191.129-8080"]
+Apr 02, 2016 9:23:06 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 9855 ms
+Apr 02, 2016 9:23:08 PM org.apache.jasper.compiler.TldLocationsCache tldScanJar
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 04, 2016 2:48:01 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-127.8.191.129-8080"]
+Apr 04, 2016 2:48:01 AM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Apr 04, 2016 2:48:02 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-127.8.191.129-8080"]
+Apr 04, 2016 2:48:02 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-127.8.191.129-8080"]
+Apr 04, 2016 7:31:05 PM org.apache.catalina.startup.Catalina addClusterRuleSet
+INFO: Cluster RuleSet not found due to [java.lang.ClassNotFoundException: org.apache.catalina.ha.ClusterRuleSet]. Cluster configuration disabled.
+Apr 04, 2016 7:31:05 PM org.apache.catalina.startup.Catalina addClusterRuleSet
+INFO: Cluster RuleSet not found due to [java.lang.ClassNotFoundException: org.apache.catalina.ha.ClusterRuleSet]. Cluster configuration disabled.
+Apr 04, 2016 7:31:06 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /opt/rh/mysql55/root/usr/lib64:/usr/java/packages/lib/i386:/lib:/usr/lib
+Apr 04, 2016 7:31:07 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-127.8.191.129-8080"]
+Apr 04, 2016 7:31:07 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 1953 ms
+Apr 04, 2016 7:31:07 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Apr 04, 2016 7:31:07 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.54
+Apr 04, 2016 7:31:07 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/ROOT.war
+Apr 04, 2016 7:31:10 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/ROOT.war has finished in 2,731 ms
+Apr 04, 2016 7:31:10 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment1.war
+Apr 04, 2016 7:31:10 PM org.apache.catalina.deploy.WebXml setVersion
+WARNING: Unknown version string [3.1]. Default version will be used.
+Apr 04, 2016 7:31:11 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment1.war has finished in 1,438 ms
+Apr 04, 2016 7:31:11 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment2.war
+Apr 04, 2016 7:31:12 PM org.apache.catalina.deploy.WebXml setVersion
+WARNING: Unknown version string [3.1]. Default version will be used.
+Apr 04, 2016 7:31:13 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment2.war has finished in 2,074 ms
+Apr 04, 2016 7:31:13 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment3.war
+Apr 04, 2016 7:31:14 PM org.apache.catalina.deploy.WebXml setVersion
+WARNING: Unknown version string [3.1]. Default version will be used.
+Apr 04, 2016 7:31:15 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment3.war has finished in 1,982 ms
+Apr 04, 2016 7:31:15 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-127.8.191.129-8080"]
+Apr 04, 2016 7:31:15 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 8573 ms
+Context Path is ::null
+Apr 04, 2016 7:31:41 PM org.apache.jasper.compiler.TldLocationsCache tldScanJar
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+javax.mail.AuthenticationFailedException: 534-5.7.14 <https://accounts.google.com/signin/continue?sarp=1&scc=1&plt=AKgnsbs4
+534-5.7.14 ZlmgeD5sHwTmxGocAxcUZ0Cqh20g00MUL1q-g7aAY3gYnV338ggrvprsL4DG3ruRTgsNeO
+534-5.7.14 wJrOLegyq4Qd8ZRUhSiy2MqZkFBby8u9BJvRt4Iy0JTxqHFGvLk6HjcUJD8-s72v14rVNO
+534-5.7.14 qWDkBF6dHVPm22KLl2TFZVfgtRg5v0Vq2KDBtJaDPjySvpPFEOAR9o8SWeyhkugZ09DNfX
+534-5.7.14 A1uK4ExNsvgMCX80b-eLy5zhOtyo4> Please log in via your web browser and
+534-5.7.14 then try again.
+534-5.7.14  Learn more at
+534 5.7.14  https://support.google.com/mail/answer/78754 31sm784943qgx.32 - gsmtp
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:826)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:761)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:685)
+	at javax.mail.Service.connect(Service.java:317)
+	at javax.mail.Service.connect(Service.java:176)
+	at javax.mail.Service.connect(Service.java:125)
+	at javax.mail.Transport.send0(Transport.java:194)
+	at javax.mail.Transport.send(Transport.java:124)
+	at com.assignment3.util.EmailUtil.sendMessage(EmailUtil.java:65)
+	at com.assignment3.controllers.UserController.doPost(UserController.java:186)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:646)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.valves.RemoteIpValve.invoke(RemoteIpValve.java:683)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1042)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:607)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:316)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+javax.mail.internet.AddressException: Empty address in string ``''
+	at javax.mail.internet.InternetAddress.checkAddress(InternetAddress.java:1149)
+	at javax.mail.internet.InternetAddress.parse(InternetAddress.java:1091)
+	at javax.mail.internet.InternetAddress.parseHeader(InternetAddress.java:658)
+	at javax.mail.internet.MimeMessage.getAddressHeader(MimeMessage.java:702)
+	at javax.mail.internet.MimeMessage.getRecipients(MimeMessage.java:534)
+	at javax.mail.Message.getAllRecipients(Message.java:305)
+	at javax.mail.internet.MimeMessage.getAllRecipients(MimeMessage.java:549)
+	at javax.mail.Transport.send(Transport.java:124)
+	at com.assignment3.util.EmailUtil.sendMessage(EmailUtil.java:65)
+	at com.assignment3.controllers.UserController.doPost(UserController.java:186)
+	at com.assignment3.controllers.UserController.doGet(UserController.java:35)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:620)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.valves.RemoteIpValve.invoke(RemoteIpValve.java:683)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1042)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:607)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:316)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+javax.mail.AuthenticationFailedException: 534-5.7.14 <https://accounts.google.com/signin/continue?sarp=1&scc=1&plt=AKgnsbv3
+534-5.7.14 0uxHHB86Mnikd_pkvv5W8CAGFMgKvXjkJR1gpbm0Kw6YBFFNLKjqJvEKhubXovJVPThd3U
+534-5.7.14 BgK6xwTYo0NsEbfxKNNJ-2wxFOPIpEFak9y86xiM0QGUTAgH4VTjP6c5rTvrlwkN-T_gyO
+534-5.7.14 C_0Zb7Fcyigd4qfyCsZUWIhgHYmUFjdG9px8gg9otoJPnFQLyzdVuH767Q7gqJIOk-Dd5k
+534-5.7.14 eM-2-9lbEzIiCnlIU6BczxYpRrUVw> Please log in via your web browser and
+534-5.7.14 then try again.
+534-5.7.14  Learn more at
+534 5.7.14  https://support.google.com/mail/answer/78754 b6sm13511588qkh.12 - gsmtp
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:826)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:761)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:685)
+	at javax.mail.Service.connect(Service.java:317)
+	at javax.mail.Service.connect(Service.java:176)
+	at javax.mail.Service.connect(Service.java:125)
+	at javax.mail.Transport.send0(Transport.java:194)
+	at javax.mail.Transport.send(Transport.java:124)
+	at com.assignment3.util.EmailUtil.sendMessage(EmailUtil.java:65)
+	at com.assignment3.controllers.UserController.doPost(UserController.java:218)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:646)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.valves.RemoteIpValve.invoke(RemoteIpValve.java:683)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1042)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:607)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:314)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Context Path is ::null
+Apr 06, 2016 2:48:42 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-127.8.191.129-8080"]
+Apr 06, 2016 2:48:42 AM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Apr 06, 2016 2:48:43 AM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [/JaiKiran_Assignment3] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Apr 06, 2016 2:48:43 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-127.8.191.129-8080"]
+Apr 06, 2016 2:48:43 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-127.8.191.129-8080"]
+Apr 08, 2016 6:01:21 PM org.apache.catalina.startup.Catalina addClusterRuleSet
+INFO: Cluster RuleSet not found due to [java.lang.ClassNotFoundException: org.apache.catalina.ha.ClusterRuleSet]. Cluster configuration disabled.
+Apr 08, 2016 6:01:21 PM org.apache.catalina.startup.Catalina addClusterRuleSet
+INFO: Cluster RuleSet not found due to [java.lang.ClassNotFoundException: org.apache.catalina.ha.ClusterRuleSet]. Cluster configuration disabled.
+Apr 08, 2016 6:01:22 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /opt/rh/mysql55/root/usr/lib64:/usr/java/packages/lib/i386:/lib:/usr/lib
+Apr 08, 2016 6:01:23 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-127.8.191.129-8080"]
+Apr 08, 2016 6:01:23 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 1726 ms
+Apr 08, 2016 6:01:23 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Apr 08, 2016 6:01:23 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.54
+Apr 08, 2016 6:01:23 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/ROOT.war
+Apr 08, 2016 6:01:26 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/ROOT.war has finished in 3,088 ms
+Apr 08, 2016 6:01:26 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment1.war
+Apr 08, 2016 6:01:26 PM org.apache.catalina.deploy.WebXml setVersion
+WARNING: Unknown version string [3.1]. Default version will be used.
+Apr 08, 2016 6:01:27 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment1.war has finished in 1,400 ms
+Apr 08, 2016 6:01:27 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment2.war
+Apr 08, 2016 6:01:28 PM org.apache.catalina.deploy.WebXml setVersion
+WARNING: Unknown version string [3.1]. Default version will be used.
+Apr 08, 2016 6:01:29 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment2.war has finished in 2,003 ms
+Apr 08, 2016 6:01:29 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment3.war
+Apr 08, 2016 6:01:29 PM org.apache.catalina.deploy.WebXml setVersion
+WARNING: Unknown version string [3.1]. Default version will be used.
+Apr 08, 2016 6:01:31 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment3.war has finished in 1,695 ms
+Apr 08, 2016 6:01:31 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-127.8.191.129-8080"]
+Apr 08, 2016 6:01:31 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 8415 ms
+Apr 09, 2016 8:47:12 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-127.8.191.129-8080"]
+Apr 09, 2016 8:47:12 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Apr 09, 2016 8:47:12 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-127.8.191.129-8080"]
+Apr 09, 2016 8:47:12 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-127.8.191.129-8080"]
+Apr 13, 2016 12:04:32 PM org.apache.catalina.startup.Catalina addClusterRuleSet
+INFO: Cluster RuleSet not found due to [java.lang.ClassNotFoundException: org.apache.catalina.ha.ClusterRuleSet]. Cluster configuration disabled.
+Apr 13, 2016 12:04:32 PM org.apache.catalina.startup.Catalina addClusterRuleSet
+INFO: Cluster RuleSet not found due to [java.lang.ClassNotFoundException: org.apache.catalina.ha.ClusterRuleSet]. Cluster configuration disabled.
+Apr 13, 2016 12:04:32 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /opt/rh/mysql55/root/usr/lib64:/usr/java/packages/lib/i386:/lib:/usr/lib
+Apr 13, 2016 12:04:33 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-127.8.191.129-8080"]
+Apr 13, 2016 12:04:33 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 1537 ms
+Apr 13, 2016 12:04:33 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Apr 13, 2016 12:04:33 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.54
+Apr 13, 2016 12:04:33 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/ROOT.war
+Apr 13, 2016 12:04:36 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/ROOT.war has finished in 2,752 ms
+Apr 13, 2016 12:04:36 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment1.war
+Apr 13, 2016 12:04:36 PM org.apache.catalina.deploy.WebXml setVersion
+WARNING: Unknown version string [3.1]. Default version will be used.
+Apr 13, 2016 12:04:37 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment1.war has finished in 1,201 ms
+Apr 13, 2016 12:04:37 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment2.war
+Apr 13, 2016 12:04:38 PM org.apache.catalina.deploy.WebXml setVersion
+WARNING: Unknown version string [3.1]. Default version will be used.
+Apr 13, 2016 12:04:39 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment2.war has finished in 1,454 ms
+Apr 13, 2016 12:04:39 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment3.war
+Apr 13, 2016 12:04:39 PM org.apache.catalina.deploy.WebXml setVersion
+WARNING: Unknown version string [3.1]. Default version will be used.
+Apr 13, 2016 12:04:41 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment3.war has finished in 2,161 ms
+Apr 13, 2016 12:04:41 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-127.8.191.129-8080"]
+Apr 13, 2016 12:04:41 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 7877 ms
+Apr 15, 2016 2:47:55 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-127.8.191.129-8080"]
+Apr 15, 2016 2:47:55 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Apr 15, 2016 2:47:55 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-127.8.191.129-8080"]
+Apr 15, 2016 2:47:55 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-127.8.191.129-8080"]
+Apr 15, 2016 7:51:30 PM org.apache.catalina.startup.Catalina addClusterRuleSet
+INFO: Cluster RuleSet not found due to [java.lang.ClassNotFoundException: org.apache.catalina.ha.ClusterRuleSet]. Cluster configuration disabled.
+Apr 15, 2016 7:51:30 PM org.apache.catalina.startup.Catalina addClusterRuleSet
+INFO: Cluster RuleSet not found due to [java.lang.ClassNotFoundException: org.apache.catalina.ha.ClusterRuleSet]. Cluster configuration disabled.
+Apr 15, 2016 7:51:31 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /opt/rh/mysql55/root/usr/lib64:/usr/java/packages/lib/i386:/lib:/usr/lib
+Apr 15, 2016 7:51:32 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-127.8.191.129-8080"]
+Apr 15, 2016 7:51:32 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 1402 ms
+Apr 15, 2016 7:51:32 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Apr 15, 2016 7:51:32 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.54
+Apr 15, 2016 7:51:32 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/ROOT.war
+Apr 15, 2016 7:51:34 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/ROOT.war has finished in 2,689 ms
+Apr 15, 2016 7:51:34 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment1.war
+Apr 15, 2016 7:51:35 PM org.apache.catalina.deploy.WebXml setVersion
+WARNING: Unknown version string [3.1]. Default version will be used.
+Apr 15, 2016 7:51:36 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment1.war has finished in 1,124 ms
+Apr 15, 2016 7:51:36 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment2.war
+Apr 15, 2016 7:51:36 PM org.apache.catalina.deploy.WebXml setVersion
+WARNING: Unknown version string [3.1]. Default version will be used.
+Apr 15, 2016 7:51:37 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment2.war has finished in 1,201 ms
+Apr 15, 2016 7:51:37 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment3.war
+Apr 15, 2016 7:51:37 PM org.apache.catalina.deploy.WebXml setVersion
+WARNING: Unknown version string [3.1]. Default version will be used.
+Apr 15, 2016 7:51:38 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment3.war has finished in 1,399 ms
+Apr 15, 2016 7:51:38 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-127.8.191.129-8080"]
+Apr 15, 2016 7:51:38 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 6687 ms
+Apr 16, 2016 8:48:07 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-127.8.191.129-8080"]
+Apr 16, 2016 8:48:08 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Apr 16, 2016 8:48:08 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-127.8.191.129-8080"]
+Apr 16, 2016 8:48:08 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-127.8.191.129-8080"]
+Apr 17, 2016 7:30:55 PM org.apache.catalina.startup.Catalina addClusterRuleSet
+INFO: Cluster RuleSet not found due to [java.lang.ClassNotFoundException: org.apache.catalina.ha.ClusterRuleSet]. Cluster configuration disabled.
+Apr 17, 2016 7:30:55 PM org.apache.catalina.startup.Catalina addClusterRuleSet
+INFO: Cluster RuleSet not found due to [java.lang.ClassNotFoundException: org.apache.catalina.ha.ClusterRuleSet]. Cluster configuration disabled.
+Apr 17, 2016 7:30:56 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /opt/rh/mysql55/root/usr/lib64:/usr/java/packages/lib/i386:/lib:/usr/lib
+Apr 17, 2016 7:30:57 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-127.8.191.129-8080"]
+Apr 17, 2016 7:30:57 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 1901 ms
+Apr 17, 2016 7:30:57 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Apr 17, 2016 7:30:57 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.54
+Apr 17, 2016 7:30:57 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/ROOT.war
+Apr 17, 2016 7:31:00 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/ROOT.war has finished in 3,335 ms
+Apr 17, 2016 7:31:00 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment1.war
+Apr 17, 2016 7:31:00 PM org.apache.catalina.deploy.WebXml setVersion
+WARNING: Unknown version string [3.1]. Default version will be used.
+Apr 17, 2016 7:31:02 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment1.war has finished in 1,421 ms
+Apr 17, 2016 7:31:02 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment2.war
+Apr 17, 2016 7:31:02 PM org.apache.catalina.deploy.WebXml setVersion
+WARNING: Unknown version string [3.1]. Default version will be used.
+Apr 17, 2016 7:31:03 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment2.war has finished in 1,701 ms
+Apr 17, 2016 7:31:03 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment3.war
+Apr 17, 2016 7:31:04 PM org.apache.catalina.deploy.WebXml setVersion
+WARNING: Unknown version string [3.1]. Default version will be used.
+Apr 17, 2016 7:31:06 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment3.war has finished in 2,818 ms
+Apr 17, 2016 7:31:06 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-127.8.191.129-8080"]
+Apr 17, 2016 7:31:06 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 9597 ms
+Apr 17, 2016 7:45:46 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment4.war
+Apr 17, 2016 7:45:48 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment4.war has finished in 1,722 ms
+Apr 17, 2016 7:45:58 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/JaiKiran_Assignment4]
+Apr 17, 2016 7:45:58 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment4.war
+Apr 17, 2016 7:45:59 PM org.apache.catalina.deploy.WebXml setVersion
+WARNING: Unknown version string [3.1]. Default version will be used.
+Apr 17, 2016 7:46:02 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment4.war has finished in 3,656 ms
+Apr 17, 2016 7:47:28 PM org.apache.jasper.compiler.TldLocationsCache tldScanJar
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+System property [org.owasp.esapi.opsteam] is not set
+System property [org.owasp.esapi.devteam] is not set
+Attempting to load ESAPI.properties via file I/O.
+Attempting to load ESAPI.properties as resource file via file I/O.
+Not found in 'org.owasp.esapi.resources' directory or file not readable: /var/lib/openshift/56b6ac642d5271fba8000026/jbossews/ESAPI.properties
+Not found in SystemResource Directory/resourceDirectory: .esapi/ESAPI.properties
+Not found in 'user.home' (/var/lib/openshift/56b6ac642d5271fba8000026) directory: /var/lib/openshift/56b6ac642d5271fba8000026/esapi/ESAPI.properties
+Loading ESAPI.properties via file I/O failed. Exception was: java.io.FileNotFoundException
+Attempting to load ESAPI.properties via the classpath.
+SUCCESSFULLY LOADED ESAPI.properties via the CLASSPATH from '/ (root)' using current thread context class loader!
+SecurityConfiguration for Validator.ConfigurationFile.MultiValued not found in ESAPI.properties. Using default: false
+Attempting to load validation.properties via file I/O.
+Attempting to load validation.properties as resource file via file I/O.
+Not found in 'org.owasp.esapi.resources' directory or file not readable: /var/lib/openshift/56b6ac642d5271fba8000026/jbossews/validation.properties
+Not found in SystemResource Directory/resourceDirectory: .esapi/validation.properties
+Not found in 'user.home' (/var/lib/openshift/56b6ac642d5271fba8000026) directory: /var/lib/openshift/56b6ac642d5271fba8000026/esapi/validation.properties
+Loading validation.properties via file I/O failed.
+Attempting to load validation.properties via the classpath.
+SUCCESSFULLY LOADED validation.properties via the CLASSPATH from '/ (root)' using current thread context class loader!
+Apr 17, 2016 8:39:53 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/JaiKiran_Assignment4]
+Apr 17, 2016 8:39:53 PM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [/JaiKiran_Assignment4] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Apr 17, 2016 8:39:53 PM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [/JaiKiran_Assignment4] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak.
+Apr 17, 2016 8:40:03 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment4.war
+Apr 17, 2016 8:40:04 PM org.apache.catalina.deploy.WebXml setVersion
+WARNING: Unknown version string [3.1]. Default version will be used.
+Apr 17, 2016 8:40:09 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/56b6ac642d5271fba8000026/app-root/runtime/dependencies/jbossews/webapps/JaiKiran_Assignment4.war has finished in 5,219 ms
+System property [org.owasp.esapi.opsteam] is not set
+System property [org.owasp.esapi.devteam] is not set
+Attempting to load ESAPI.properties via file I/O.
+Attempting to load ESAPI.properties as resource file via file I/O.
+Not found in 'org.owasp.esapi.resources' directory or file not readable: /var/lib/openshift/56b6ac642d5271fba8000026/jbossews/ESAPI.properties
+Not found in SystemResource Directory/resourceDirectory: .esapi/ESAPI.properties
+Not found in 'user.home' (/var/lib/openshift/56b6ac642d5271fba8000026) directory: /var/lib/openshift/56b6ac642d5271fba8000026/esapi/ESAPI.properties
+Loading ESAPI.properties via file I/O failed. Exception was: java.io.FileNotFoundException
+Attempting to load ESAPI.properties via the classpath.
+SUCCESSFULLY LOADED ESAPI.properties via the CLASSPATH from '/ (root)' using current thread context class loader!
+SecurityConfiguration for Validator.ConfigurationFile.MultiValued not found in ESAPI.properties. Using default: false
+Attempting to load validation.properties via file I/O.
+Attempting to load validation.properties as resource file via file I/O.
+Not found in 'org.owasp.esapi.resources' directory or file not readable: /var/lib/openshift/56b6ac642d5271fba8000026/jbossews/validation.properties
+Not found in SystemResource Directory/resourceDirectory: .esapi/validation.properties
+Not found in 'user.home' (/var/lib/openshift/56b6ac642d5271fba8000026) directory: /var/lib/openshift/56b6ac642d5271fba8000026/esapi/validation.properties
+Loading validation.properties via file I/O failed.
+Attempting to load validation.properties via the classpath.
+SUCCESSFULLY LOADED validation.properties via the CLASSPATH from '/ (root)' using current thread context class loader!
